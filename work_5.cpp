@@ -1,8 +1,10 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
 	float first, second, third, midtrem, final, total, total1 ;
+	string result;
 		cout << "==========QUIZZES===============" << endl;
 		cout << "Enter first quizz (10) : ";
 		cin >> first;
@@ -30,11 +32,10 @@ int main()
 		//Total
 		total1 = midtrem + final + total;
 		cout << "Total : " << total1 << endl;
+	
+	
+		result = (total >= 50) ? "PASS" : "FAIL";
+		cout << "You score is" <<result << endl;
 
-		if (total1 >= 50){
-			cout << "You score is PASS" << endl;
-		} else {
-			cout << "You score is NOT PASSED" << endl;
-		}
 	return 0;
 }
